@@ -29,14 +29,17 @@ body{
 }
 
 .logo{
-  background-image: url('../img/logo.png');
   position: absolute;
   background-color: #FFFFFF;
   width: 215px;
   height: 250px;
   background-size: cover;
-  opacity: .5;
-  right: 5%;
+  /* Grabbed from hipster puppies under Joel's help */
+  -webkit-mask-image: url(../img/logo.png);
+          mask-image: url(../img/logo.png);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  right: 15%;
   top: 10%;
 }
 
@@ -71,6 +74,10 @@ h1{
   padding: 30px;
   font-size: 20px;
   font-family: 'Poiret One';
+}
+
+.contact-email{
+  font-size: 20px;
 }
 
 .callout-msg{
@@ -120,24 +127,30 @@ li{
 }
 
 .image-cards{
-  margin: auto;
   display: flex;
-  flex-direction: row;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
+  list-style: none;
+  margin-left: 180px;
 }
 
 #left-img{
-  list-style-image: url('../img/left-img.jpg');
+  background-image: url('../img/left-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 #middle-img{
-  list-style-image: url('../img/middle-img.jpg');
+  background-image: url('../img/middle-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 #right-img{
-  list-style-image: url('../img/middle-img.jpg');
+  background-image: url('../img/right-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 i{
